@@ -305,6 +305,11 @@ footer a:hover {
   color: #f2f7ff;
   margin-bottom: 8px;
 }
+.project-btn {
+  margin-top: 18px !important;
+  display: inline-block;
+}
+
 /* ===== CONTACT SECTION WITH NEON GLOW ===== */
 
 .contact-section {
@@ -468,6 +473,82 @@ footer a:hover {
   margin-bottom: 8px;
   color: #f1f4ff;
 }
+
+/* ===== CORE SKILLS — COLORED CARDS + NEON GLOW ===== */
+
+.skill-card {
+  padding: 28px 30px;
+  border-radius: 14px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.18);
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+/* Neon border */
+.skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, 
+              rgba(255,255,255,0.35),
+              rgba(255,255,255,0.05));
+  -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.25;
+  transition: 0.35s ease;
+}
+
+/* Unique color themes per skill card */
+.skill-card:nth-child(1) {
+  background: linear-gradient(135deg, #6c5ce7, #4834d4);
+  box-shadow: 0 0 20px rgba(108,92,231,0.35);
+}
+
+.skill-card:nth-child(2) {
+  background: linear-gradient(135deg, #20c997, #178f68);
+  box-shadow: 0 0 20px rgba(32,201,151,0.35);
+}
+
+.skill-card:nth-child(3) {
+  background: linear-gradient(135deg, #45aaf2, #2d98da);
+  box-shadow: 0 0 20px rgba(69,170,242,0.35);
+}
+
+/* Hover glow */
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255,255,255,0.4);
+}
+
+.skill-card:hover::before {
+  opacity: 0.85;
+}
+
+/* Icons */
+.skill-icon {
+  font-size: 2.3rem;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.skill-card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #f6f8ff;
+}
+
+
 
 
 
