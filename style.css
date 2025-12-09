@@ -1,4 +1,3 @@
-/* ===== GLOBAL STYLING ===== */
 body {
     margin: 0;
     padding: 0;
@@ -7,11 +6,6 @@ body {
     color: #1a1a1a;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
-/* ===== NAVIGATION ===== */
 header {
     background: white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
@@ -50,7 +44,6 @@ nav ul li a:hover {
     color: #1565c0;
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
     height: 330px;
     background: linear-gradient(135deg, #e3f2fd, #bbdefb, #90caf9);
@@ -59,7 +52,7 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     padding: 80px 20px 40px;
-    margin-top: 65px; /* makes room for fixed navbar */
+    margin-top: 65px;
 }
 
 .hero-text h2 {
@@ -75,7 +68,6 @@ nav ul li a:hover {
     max-width: 700px;
 }
 
-/* ===== SECTIONS ===== */
 .section {
     padding: 60px 8%;
 }
@@ -87,7 +79,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* ===== SKILLS ===== */
+/* Skills */
 .skills-container {
     display: flex;
     justify-content: center;
@@ -101,24 +93,14 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.09);
-    transition: transform 0.2s ease;
-}
-
-.skill-box:hover {
-    transform: translateY(-4px);
 }
 
 .skill-box h3 {
     color: #1565c0;
     margin-bottom: 10px;
-    font-size: 1.2rem;
 }
 
-.skill-box ul {
-    padding-left: 18px;
-}
-
-/* ===== PROJECT GRID ===== */
+/* Projects */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -140,13 +122,6 @@ nav ul li a:hover {
 
 .project-card h3 {
     color: #0d47a1;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    color: #333;
-    font-size: 0.95rem;
-    line-height: 1.4;
 }
 
 .btn {
@@ -157,7 +132,6 @@ nav ul li a:hover {
     color: white;
     border-radius: 6px;
     text-decoration: none;
-    font-size: 0.9rem;
     transition: 0.2s;
 }
 
@@ -165,7 +139,7 @@ nav ul li a:hover {
     background: #1565c0;
 }
 
-/* ===== CONTACT SECTION ===== */
+/* Contact */
 #contact p {
     text-align: center;
     font-size: 1.05rem;
@@ -174,19 +148,13 @@ nav ul li a:hover {
 #contact a {
     color: #0d47a1;
     font-weight: 600;
-    text-decoration: none;
 }
 
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* ===== FOOTER ===== */
+/* Footer */
 footer {
     background: #e3f2fd;
     padding: 15px;
     text-align: center;
     color: #0d47a1;
     margin-top: 20px;
-    font-size: 0.9rem;
 }
