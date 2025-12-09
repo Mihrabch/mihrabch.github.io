@@ -2,6 +2,8 @@
 
 /* COLOR SYSTEM */
 :root {
+   --glow-strength: 0.35;    /* global glow intensity (0.10 = subtle, 0.50 = strong) */
+  --glow-hover-multiplier: 1.6;  /* how much stronger the glow becomes on hover */
   --primary: #1b3155;              /* Deep corporate navy */
   --primary-light: #2f4f81;
   --accent: #4a9ce8;               /* Executive blue accent */
@@ -228,7 +230,7 @@ footer a:hover {
 .project-card {
   border-radius: 14px;
   padding: 32px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 0 18px rgba(46,127,196, var(--glow-strength));
   transition: 0.35s ease;
   border: 1px solid rgba(255,255,255,0.15);
   color: #ffffff;
@@ -258,32 +260,32 @@ footer a:hover {
 
 /* Specific Neon Glows Per Card */
 .project-card:nth-child(1) {
-  background: linear-gradient(135deg, #3867d6, #2b50a2);
-  box-shadow: 0 0 18px rgba(56,103,214,0.35);
+  background: linear-gradient(135deg, #1b3155, #2f4f81);
+  box-shadow: 0 0 18px rgba(43,78,130,0.35);
 }
 .project-card:nth-child(1):hover {
   box-shadow: 0 0 28px rgba(56,103,214,0.55);
 }
 
 .project-card:nth-child(2) {
-  background: linear-gradient(135deg, #20a4b8, #157a87);
-  box-shadow: 0 0 18px rgba(32,164,184,0.35);
+  background: linear-gradient(135deg, #2f4f81, #4a9ce8);
+  box-shadow: 0 0 18px rgba(74,156,232,0.35);
 }
 .project-card:nth-child(2):hover {
   box-shadow: 0 0 28px rgba(32,164,184,0.55);
 }
 
 .project-card:nth-child(3) {
-  background: linear-gradient(135deg, #4b7bec, #3867d6);
-  box-shadow: 0 0 18px rgba(75,123,236,0.35);
+  background: linear-gradient(135deg, #1b3155, #2e7fc4);
+  box-shadow: 0 0 18px rgba(46,127,196,0.35);
 }
 .project-card:nth-child(3):hover {
   box-shadow: 0 0 28px rgba(75,123,236,0.55);
 }
 
 .project-card:nth-child(4) {
-  background: linear-gradient(135deg, #45aaf2, #2d98da);
-  box-shadow: 0 0 18px rgba(45,152,218,0.35);
+  background: linear-gradient(135deg, #2e7fc4, #4a9ce8);
+  box-shadow: 0 0 18px rgba(46,127,196,0.35);
 }
 .project-card:nth-child(4):hover {
   box-shadow: 0 0 28px rgba(45,152,218,0.55);
@@ -443,15 +445,16 @@ footer a:hover {
   transition: 0.35s ease;
 }
 
-/* Individual card colors */
+/* Corporate Blue Highlight Cards */
+
 .highlight-card:nth-child(1) {
-  background: linear-gradient(135deg, #4b7bec, #3867d6);
-  box-shadow: 0 0 20px rgba(75,123,236,0.35);
+  background: linear-gradient(135deg, #2f4f81, #1b3155);
+  box-shadow: 0 0 22px rgba(43,78,130,0.35);
 }
 
 .highlight-card:nth-child(2) {
-  background: linear-gradient(135deg, #20c997, #178f68);
-  box-shadow: 0 0 20px rgba(32,201,151,0.35);
+  background: linear-gradient(135deg, #4a9ce8, #2e7fc4);
+  box-shadow: 0 0 22px rgba(74,156,232,0.35);
 }
 
 /* Hover glow effect */
@@ -506,20 +509,21 @@ footer a:hover {
   transition: 0.35s ease;
 }
 
-/* Unique color themes per skill card */
+/* Corporate Blue Skill Cards */
+
 .skill-card:nth-child(1) {
-  background: linear-gradient(135deg, #6c5ce7, #4834d4);
-  box-shadow: 0 0 20px rgba(108,92,231,0.35);
+  background: linear-gradient(135deg, #1b3155, #2f4f81);
+  box-shadow: 0 0 20px rgba(27,49,85,0.35);
 }
 
 .skill-card:nth-child(2) {
-  background: linear-gradient(135deg, #20c997, #178f68);
-  box-shadow: 0 0 20px rgba(32,201,151,0.35);
+  background: linear-gradient(135deg, #2f4f81, #2e7fc4);
+  box-shadow: 0 0 20px rgba(46,127,196,0.35);
 }
 
 .skill-card:nth-child(3) {
-  background: linear-gradient(135deg, #45aaf2, #2d98da);
-  box-shadow: 0 0 20px rgba(69,170,242,0.35);
+  background: linear-gradient(135deg, #2e7fc4, #4a9ce8);
+  box-shadow: 0 0 20px rgba(74,156,232,0.35);
 }
 
 /* Hover glow */
@@ -549,6 +553,20 @@ footer a:hover {
 }
 
 
+.section-divider {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-light),
+    var(--accent),
+    var(--primary-light),
+    transparent
+  );
+  margin: 40px 0;
+  opacity: 0.7;
+}
 
 
 
