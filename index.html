@@ -3,143 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mihrab Chowdhury — Data & ML Portfolio</title>
+  <title>Mihrab Chowdhury — Data & Analytics Modeler</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <header>
-    <nav class="navbar">
-      <div class="nav-brand">Mihrab Chowdhury</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="navbar">
+    <div class="brand">Mihrab Chowdhury</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- HERO / ABOUT -->
-<section class="hero" id="about">
-  <div class="hero-content">
-    <img src="YOUR_PHOTO.jpg" alt="Mihrab Chowdhury" class="hero-photo"/>
-    <h1>Mihrab Chowdhury</h1>
-    <h2>Data Scientist & ML Engineer</h2>
-    <p>
-      I turn large, messy datasets (100k–440k+ records) into actionable insights — via predictive models, A/B tests, 
-      recommendation engines, and data pipelines.  
-      I speak Python, ML, SQL & AWS.  
-      I deliver tools (forecasting, classification, pricing, analytics) that drive measurable impact.
-    </p>
-  </div>
-</section>
-  
+  <!-- HERO / SUMMARY -->
+  <section id="about" class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Mihrab Chowdhury</h1>
+        <h2>Data & Analytics Modeler</h2>
+        <p>
+          Transforming large-scale environmental, public-health, and observational datasets into actionable insights, predictive models, and decision-ready analytics. Skilled in data cleaning, modeling, statistics & pipelines.
+        </p>
+      </div>
+      <!-- Optional: uncomment if you have a picture -->
+      <!-- <div class="hero-photo">
+        <img src="YOUR_PHOTO.jpg" alt="Mihrab Chowdhury">
+      </div> -->
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section class="section" id="skills">
-    <h2 class="section-title">Core Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <h3>Machine Learning & Modeling</h3>
-        <p>Forecasting, Classification, Regression, Time-Series, Feature Engineering, Ensemble Methods, Statistical Modeling</p>
+    <h2>Core Skills</h2>
+    <div class="skills-cards">
+      <div class="skill-card">
+        <h3>Modeling & Forecasting</h3>
+        <p>Time-series · Statistical modeling · Risk & prediction modeling · Feature engineering</p>
       </div>
-      <div class="skill-item">
+      <div class="skill-card">
         <h3>Data Engineering & Pipelines</h3>
-        <p>ETL / Data Cleaning, SQL, Data Integration, AWS ML / Cloud, Docker basics, Automation</p>
+        <p>Data cleaning · ETL workflows · SQL / R / Python · Cloud & automation</p>
       </div>
-      <div class="skill-item">
-        <h3>Programming & Tools</h3>
-        <p>Python (Pandas, NumPy, Scikit-Learn), R, MATLAB, Git / GitHub, Data Visualization</p>
+      <div class="skill-card">
+        <h3>Tools & Programming</h3>
+        <p>Python · R · MATLAB · Git/GitHub · Data visualization</p>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
-    <h2 class="section-title">Selected Projects</h2>
+    <h2>Selected Projects</h2>
 
-    <!-- Project 1 -->
-    <div class="project-case">
-      <div class="project-text">
-        <h3>A/B Testing & Business Strategy — ENews Express</h3>
-        <p><strong>Data size:</strong> ~5,000+ user sessions</p>
-        <p><strong>Tools & methods:</strong> Python (Pandas, NumPy), statistical tests (t-test / χ²), data visualization</p>
-        <p><strong>Impact:</strong> +12% click-through rate; +8% avg. time-on-page → improved engagement & retention</p>
-        <a href="https://github.com/Mihrabch/ENews_Express_business_strategy_with_AB_testing" target="_blank" class="btn">GitHub Repo</a>
-      </div>
+    <!-- Example Project Block: Feel free to copy for each project -->
+    <div class="project-block alt">
+      <h3>NYC Restaurant Data Analysis & Recommendation Engine</h3>
+      <p><strong>Data:</strong> ~ 50,000+ restaurant records (locations, metadata, reviews)</p>
+      <p><strong>Work:</strong> Data cleaning, feature engineering, recommendation / segmentation modeling</p>
+      <p><strong>Impact:</strong> Identified top 10% high-value segments — insights usable for targeted marketing or expansion strategy.</p>
+      <a href="https://github.com/Mihrabch/NYC-Restaurant-Data-Analysis-with-Business-Recommendation" target="_blank" class="btn">View on GitHub</a>
     </div>
 
-    <!-- Project 2 -->
-    <div class="project-case alt">
-      <div class="project-text">
-        <h3>NYC Restaurant Data Analysis & Recommendation Engine</h3>
-        <p><strong>Data size:</strong> tens of thousands of NYC restaurant records (locations, reviews, features)</p>
-        <p><strong>Tools & methods:</strong> Python (Pandas, Scikit-Learn), EDA, recommendation modeling</p>
-        <p><strong>Impact:</strong> Built recommendation engine to segment high-value restaurants — valuable for targeting & business intelligence</p>
-        <a href="https://github.com/Mihrabch/NYC-Restaurant-Data-Analysis-with-Business-Recommendation" target="_blank" class="btn">GitHub Repo</a>
-      </div>
+    <div class="project-block">
+      <h3>Cyclist Behavior Analysis & Optimization</h3>
+      <p><strong>Data:</strong> 10,000+ ride / route / behavior records (time, route, speed, logs)</p>
+      <p><strong>Work:</strong> Behavioral analytics + optimization modeling to detect inefficiencies</p>
+      <p><strong>Impact:</strong> Proposed routing / behavior optimizations — potential use for urban-mobility planning or mobility products.</p>
+      <a href="https://github.com/Mihrabch/Cyclist-Behavior-Analysis-and-Optimization-Project" target="_blank" class="btn">View on GitHub</a>
     </div>
 
-    <!-- Project 3 -->
-    <div class="project-case">
-      <div class="project-text">
-        <h3>Cyclist Behavior Analysis & Optimization</h3>
-        <p><strong>Data size:</strong> thousands of ride / route / behavior records</p>
-        <p><strong>Tools & methods:</strong> Python (Pandas, SciPy / ML), data cleaning, behavioral analytics & optimization modeling</p>
-        <p><strong>Impact:</strong> Identified inefficiency patterns & proposed routing optimizations — insights useful for urban planning or mobility products</p>
-        <a href="https://github.com/Mihrabch/Cyclist-Behavior-Analysis-and-Optimization-Project" target="_blank" class="btn">GitHub Repo</a>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="project-case alt">
-      <div class="project-text">
-        <h3>Rent Price Prediction — Real Estate ML Model</h3>
-        <p><strong>Data size:</strong> 1,000s+ housing & demographic entries (market data)</p>
-        <p><strong>Tools & methods:</strong> Python (Pandas, Scikit-Learn), regression modeling, feature engineering, validation</p>
-        <p><strong>Impact:</strong> Predictive pricing model — useful for market analysis, investment decisions, and client advisory</p>
-        <a href="https://github.com/Mihrabch/Rent-Prediction-using-Data-Science-Machine-Learning" target="_blank" class="btn">GitHub Repo</a>
-      </div>
-    </div>
-
-    <!-- Project 5 -->
-    <div class="project-case">
-      <div class="project-text">
-        <h3>Diabetes Prediction — BRFSS Health Survey ML Pipeline</h3>
-        <p><strong>Data size:</strong> ~440,000+ survey respondents (BRFSS 2021–2022 US nationwide)</p>
-        <p><strong>Tools & methods:</strong> Python (Pandas, Scikit-Learn), R (survey packages), data preprocessing & classification modeling</p>
-        <p><strong>Impact:</strong> Built risk-prediction model for chronic disease screening — enables scalable public-health analytics and risk stratification</p>
-        <a href="https://github.com/ragibayon/diabetes-ml-brfss" target="_blank" class="btn">GitHub Repo</a>
-      </div>
-    </div>
-
-    <!-- Project 6 -->
-    <div class="project-case alt">
-      <div class="project-text">
-        <h3>Weather Prediction ML Framework</h3>
-        <p><strong>Data size:</strong> multi-year environmental & weather data (thousands of records / time-series)</p>
-        <p><strong>Tools & methods:</strong> Python (Pandas, Scikit-Learn / Statsmodels), time-series modeling, forecasting workflow</p>
-        <p><strong>Impact:</strong> Developed forecasting tool — demonstrates strength in environmental/time-series modeling & predictive analytics</p>
-        <a href="https://github.com/Mihrabch/Weather-Prediction" target="_blank" class="btn">GitHub Repo</a>
-      </div>
-    </div>
-
+    <!-- Add additional project-blocks similarly for other projects -->
   </section>
 
   <!-- CONTACT -->
-  <section class="section" id="contact">
-    <h2 class="section-title">Contact</h2>
+  <footer id="contact" class="section">
+    <h2>Contact</h2>
     <p>Email: <a href="mailto:mihrabchow@gmail.com">mihrabchow@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/Mihrabch" target="_blank">github.com/Mihrabch</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/mihrabch" target="_blank">linkedin.com/in/mihrabch</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Mihrab Chowdhury</p>
   </footer>
 
 </body>
 </html>
-
