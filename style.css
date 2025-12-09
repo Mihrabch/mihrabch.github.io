@@ -197,5 +197,38 @@ body {
 /* etc... rest of previous styles */
 
 
+/* Highlights / Key Achievements Section */
+.highlights {
+  background: #ffffff;
+  padding: 60px 8%;
+}
+.highlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.highlight-card {
+  background: #eef5fd;
+  padding: 24px 28px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  flex: 1 1 240px;
+  max-width: 280px;
+}
+.highlight-card h3 {
+  margin-top: 0;
+  color: #0d47a1;
+}
+.highlight-card p, .highlight-card ul {
+  margin-top: 12px;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: #222;
+}
+.highlight-card ul {
+  padding-left: 18px;
+}
+
 
 
