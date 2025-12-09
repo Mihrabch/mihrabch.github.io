@@ -132,6 +132,70 @@ footer p, footer a {
     max-width: 100%;
   }
 }
+:root {
+  --primary-color: #0d47a1;   /* deep blue */
+  --accent-color: #ff6f61;    /* coral / contrasting accent */
+  --bg-light: #f4f7fb;
+  --card-white: #ffffff;
+  --text-color: #222222;
+}
+
+/* Hero / Banner styling */
+.hero-banner {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb, #90caf9);
+  text-align: center;
+  padding: 140px 8% 100px;
+  color: var(--card-white);
+  position: relative;
+}
+.hero-banner h1 {
+  font-size: 3.2rem;
+  color: var(--card-white);
+}
+.hero-banner h2 {
+  font-size: 1.9rem;
+  margin-top: 12px;
+  color: var(--card-white);
+}
+.hero-banner p {
+  font-size: 1.2rem;
+  margin: 24px auto 32px;
+  max-width: 680px;
+  color: var(--card-white);
+}
+.resume-btn {
+  background: var(--accent-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.resume-btn:hover {
+  background: darken(var(--accent-color), 10%);
+}
+
+/* Body background and general */
+body {
+  background: var(--bg-light);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Card backgrounds for sections (projects, skills, etc.) */
+.project-card, .skill-card {
+  background: var(--card-white);
+  border-radius: 10px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+}
+.btn {
+  background: var(--primary-color);
+  color: white;
+}
+/* etc... rest of previous styles */
+
 
 
 
