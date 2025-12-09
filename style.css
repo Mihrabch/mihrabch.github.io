@@ -407,5 +407,69 @@ footer a:hover {
   color: #b7c2d1;
 }
 
+/* ===== COLORED HIGHLIGHT CARDS ===== */
+.highlight-card {
+  padding: 28px 30px;
+  border-radius: 14px;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 0 18px rgba(80,120,255,0.25);
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neon glow border */
+.highlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg,
+              rgba(255,255,255,0.4),
+              rgba(255,255,255,0.1));
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  opacity: 0.25;
+  transition: 0.35s ease;
+}
+
+/* Individual card colors */
+.highlight-card:nth-child(1) {
+  background: linear-gradient(135deg, #4b7bec, #3867d6);
+  box-shadow: 0 0 20px rgba(75,123,236,0.35);
+}
+
+.highlight-card:nth-child(2) {
+  background: linear-gradient(135deg, #20c997, #178f68);
+  box-shadow: 0 0 20px rgba(32,201,151,0.35);
+}
+
+/* Hover glow effect */
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(75,123,236,0.55);
+}
+
+.highlight-card:hover::before {
+  opacity: 0.85;
+}
+
+.highlight-card h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.highlight-card ul li {
+  margin-bottom: 8px;
+  color: #f1f4ff;
+}
+
+
+
 
 
