@@ -95,67 +95,78 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2 class="section-title">Highlighted Projects</h2>
+<section id="projects" class="section">
+  <h2 class="section-title">Highlighted Projects</h2>
 
-    <div class="card-grid">
+  <div class="card-grid">
 
-      <!-- Project 1 -->
-      <div class="project-card">
-        <div class="project-icon"><i class="fa-solid fa-database"></i></div>
-        <h3>BRFSS Health Survey Modeling</h3>
-        <p class="project-desc">
-          Built a predictive analytics pipeline using 440k+ U.S. health records with survey weights, 
-          ML models, and risk-scoring.
-        </p>
-        <ul class="project-highlights">
-          <li><i class="fa-solid fa-check"></i> 440k+ records analyzed</li>
-          <li><i class="fa-solid fa-check"></i> Classification + risk modeling</li>
-          <li><i class="fa-solid fa-check"></i> Python / R analytics pipeline</li>
-        </ul>
-        <a href="https://github.com/ragibayon/diabetes-ml-brfss" target="_blank" class="btn project-btn">GitHub Repo</a>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-icon"><i class="fa-solid fa-water"></i></div>
-        <h3>Wastewater Forecasting & Analytics</h3>
-        <p class="project-desc">
-          Modeled environmental and wastewater viral load time-series for hospitalization forecasting.
-        </p>
-        <ul class="project-highlights">
-          <li><i class="fa-solid fa-check"></i> Multi-month environmental dataset</li>
-          <li><i class="fa-solid fa-check"></i> Time-series forecasting</li>
-          <li><i class="fa-solid fa-check"></i> Data engineering + feature creation</li>
-        </ul>
-        <a href="#" class="btn project-btn">GitHub Repo</a>
-      </div>
-
-      <!-- Placeholder Project 3 -->
-      <div class="project-card">
-        <div class="project-icon"><i class="fa-solid fa-chart-simple"></i></div>
-        <h3>[Project Title 3]</h3>
-        <p class="project-desc">Description and impact of the third analytics or ML project.</p>
-        <ul class="project-highlights">
-          <li><i class="fa-solid fa-check"></i> Data size: [X records]</li>
-          <li><i class="fa-solid fa-check"></i> Techniques used: [List]</li>
-        </ul>
-        <a href="#" class="btn project-btn">GitHub Repo</a>
-      </div>
-
-      <!-- Placeholder Project 4 -->
-      <div class="project-card">
-        <div class="project-icon"><i class="fa-solid fa-city"></i></div>
-        <h3>[Project Title 4]</h3>
-        <p class="project-desc">Description and outcomes of the fourth applied analytics project.</p>
-        <ul class="project-highlights">
-          <li><i class="fa-solid fa-check"></i> Dataset: [Details]</li>
-          <li><i class="fa-solid fa-check"></i> Methods: [ML / Stats / Forecasting]</li>
-        </ul>
-        <a href="#" class="btn project-btn">GitHub Repo</a>
-      </div>
-
+    <!-- Project 1: BRFSS -->
+    <div class="project-card">
+      <div class="project-icon"><i class="fa-solid fa-database"></i></div>
+      <h3>BRFSS Health Risk Prediction (440k+ Records)</h3>
+      <p class="project-desc">
+        Built a population-level ML framework using nationwide BRFSS data with survey weighting and class-imbalance correction.
+      </p>
+      <ul class="project-highlights">
+        <li><i class="fa-solid fa-check"></i> 440k+ health records cleaned & processed</li>
+        <li><i class="fa-solid fa-check"></i> SMOTE oversampling vs. baseline model comparisons</li>
+        <li><i class="fa-solid fa-check"></i> Achieved ROC–AUC: <strong>0.87</strong> (best model)</li>
+        <li><i class="fa-solid fa-check"></i> Feature ranking & explainability analysis</li>
+      </ul>
+      <a href="https://github.com/ragibayon/diabetes-ml-brfss" target="_blank" class="btn project-btn">View GitHub Repo</a>
     </div>
+
+    <!-- Project 2: Wastewater -->
+    <div class="project-card">
+      <div class="project-icon"><i class="fa-solid fa-water"></i></div>
+      <h3>Wastewater Viral Load Prediction</h3>
+      <p class="project-desc">
+        Time-series prediction of COVID-19 wastewater viral RNA to forecast hospitalization trends.
+      </p>
+      <ul class="project-highlights">
+        <li><i class="fa-solid fa-check"></i> Multi-month environmental & RNA concentration dataset</li>
+        <li><i class="fa-solid fa-check"></i> Forecasting models: ARIMA, Penalized Splines, ML regressors</li>
+        <li><i class="fa-solid fa-check"></i> Best model accuracy: <strong>MAPE ↓ by 18%</strong> after feature engineering</li>
+        <li><i class="fa-solid fa-check"></i> Strong lag-correlation analysis (7–21 day lead time)</li>
+      </ul>
+      <a href="YOUR_WASTEWATER_REPO" target="_blank" class="btn project-btn">View GitHub Repo</a>
+    </div>
+
+    <!-- Project 3: NYC Restaurants -->
+    <div class="project-card">
+      <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+      <h3>NYC Restaurant Analytics & Business Insights</h3>
+      <p class="project-desc">
+        Identified risk factors and business patterns from large-scale NYC inspection & rating datasets.
+      </p>
+      <ul class="project-highlights">
+        <li><i class="fa-solid fa-check"></i> Processed 200k+ restaurant inspection records</li>
+        <li><i class="fa-solid fa-check"></i> Built violation-risk model (Accuracy: <strong>82%</strong>)</li>
+        <li><i class="fa-solid fa-check"></i> Cluster analysis for neighborhood-level recommendations</li>
+        <li><i class="fa-solid fa-check"></i> Delivered actionable insights for public-health compliance</li>
+      </ul>
+      <a href="YOUR_RESTAURANT_REPO" target="_blank" class="btn project-btn">View GitHub Repo</a>
+    </div>
+
+    <!-- Project 4: Cyclist Behavior -->
+    <div class="project-card">
+      <div class="project-icon"><i class="fa-solid fa-bicycle"></i></div>
+      <h3>Cyclist Behavior Optimization Model</h3>
+      <p class="project-desc">
+        Analyzed city-wide usage patterns and optimized route preferences using demand modeling.
+      </p>
+      <ul class="project-highlights">
+        <li><i class="fa-solid fa-check"></i> Cleaned & analyzed 300k+ trip-behavior records</li>
+        <li><i class="fa-solid fa-check"></i> Predictive model accuracy: <strong>~85%</strong></li>
+        <li><i class="fa-solid fa-check"></i> Feature engineering for seasonality & rider segments</li>
+        <li><i class="fa-solid fa-check"></i> Recommendation insights for system optimization</li>
+      </ul>
+      <a href="YOUR_CYCLIST_REPO" target="_blank" class="btn project-btn">View GitHub Repo</a>
+    </div>
+
+  </div>
+</section>
+
   </section>
 
   <!-- CONTACT -->
@@ -168,4 +179,5 @@
 
 </body>
 </html>
+
 
