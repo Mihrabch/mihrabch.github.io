@@ -305,3 +305,107 @@ footer a:hover {
   color: #f2f7ff;
   margin-bottom: 8px;
 }
+/* ===== CONTACT SECTION WITH NEON GLOW ===== */
+
+.contact-section {
+  padding: 90px 8%;
+  background: linear-gradient(135deg, #111a2c, #0d1424, #080d18);
+  color: #ffffff;
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
+}
+
+/* CTA Banner */
+.cta-banner {
+  margin-bottom: 50px;
+  padding: 30px 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #304e8a, #1f335d);
+  box-shadow: 0 0 22px rgba(60,100,200,0.35);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.cta-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.cta-banner p {
+  color: #d3def5;
+  font-size: 1.1rem;
+}
+
+
+/* Contact Cards Grid */
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+/* Neon Glow Cards */
+.contact-card {
+  width: 250px;
+  background: rgba(255,255,255,0.05);
+  padding: 26px 30px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 0 14px rgba(140,170,255,0.15);
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neon Glow Border (animated) */
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(100,160,255,0.7), rgba(30,70,150,0.4));
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: opacity 0.35s ease;
+  opacity: 0.35;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 26px rgba(160,190,255,0.45);
+}
+.contact-card:hover::before {
+  opacity: 0.9;
+}
+
+/* Icons */
+.contact-icon {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+  color: #8fbaff;
+}
+
+.contact-card h3 {
+  margin-bottom: 6px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contact-card a {
+  color: #d7e6ff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-note {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #b7c2d1;
+}
+
+
+
