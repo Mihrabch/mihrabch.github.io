@@ -222,3 +222,86 @@ footer a {
 footer a:hover {
   color: #fff3c7;
 }
+
+/* ===== SOFT NEON GLOW FOR PROJECT CARDS ===== */
+
+.project-card {
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow Animation Container */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.25),
+    rgba(255,255,255,0.03)
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+/* Specific Neon Glows Per Card */
+.project-card:nth-child(1) {
+  background: linear-gradient(135deg, #3867d6, #2b50a2);
+  box-shadow: 0 0 18px rgba(56,103,214,0.35);
+}
+.project-card:nth-child(1):hover {
+  box-shadow: 0 0 28px rgba(56,103,214,0.55);
+}
+
+.project-card:nth-child(2) {
+  background: linear-gradient(135deg, #20a4b8, #157a87);
+  box-shadow: 0 0 18px rgba(32,164,184,0.35);
+}
+.project-card:nth-child(2):hover {
+  box-shadow: 0 0 28px rgba(32,164,184,0.55);
+}
+
+.project-card:nth-child(3) {
+  background: linear-gradient(135deg, #4b7bec, #3867d6);
+  box-shadow: 0 0 18px rgba(75,123,236,0.35);
+}
+.project-card:nth-child(3):hover {
+  box-shadow: 0 0 28px rgba(75,123,236,0.55);
+}
+
+.project-card:nth-child(4) {
+  background: linear-gradient(135deg, #45aaf2, #2d98da);
+  box-shadow: 0 0 18px rgba(45,152,218,0.35);
+}
+.project-card:nth-child(4):hover {
+  box-shadow: 0 0 28px rgba(45,152,218,0.55);
+}
+
+/* Subtle Lift on Hover */
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Icons */
+.project-icon i {
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+/* Highlight Text */
+.project-highlights li {
+  color: #f2f7ff;
+  margin-bottom: 8px;
+}
