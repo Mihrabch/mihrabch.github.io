@@ -286,3 +286,27 @@ a:hover {
     font-size: 0.9rem;
   }
 }
+
+/* ===== Section Background Variations ===== */
+
+.stats-bg {
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+.projects-bg {
+  background: linear-gradient(135deg, #020617, #020617);
+}
+
+.stack-bg {
+  background: linear-gradient(135deg, #020617, #020617);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.cert-bg {
+  background: linear-gradient(135deg, #020617, #020617);
+}
+
+.contact-bg {
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
