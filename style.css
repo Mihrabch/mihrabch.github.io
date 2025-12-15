@@ -310,3 +310,45 @@ a:hover {
   background: linear-gradient(135deg, #0f172a, #020617);
 }
 
+
+/* ===== Project Header ===== */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-header i {
+  font-size: 1.2rem;
+}
+
+/* ===== Project Themes ===== */
+
+.project-health {
+  border-left: 4px solid #22c55e;
+}
+.project-health i {
+  color: #22c55e;
+}
+
+.project-water {
+  border-left: 4px solid #38bdf8;
+}
+.project-water i {
+  color: #38bdf8;
+}
+
+.project-food {
+  border-left: 4px solid #f97316;
+}
+.project-food i {
+  color: #f97316;
+}
+
+.project-mobility {
+  border-left: 4px solid #a78bfa;
+}
+.project-mobility i {
+  color: #a78bfa;
+}
