@@ -114,30 +114,25 @@ html {
 
 /* Navbar active link colors by section */
 /* Projects */
-.nav-links a[href="#projects"].active::after {
-  background-color: #22c55e;   /* green */
-}
-
-/* Technical Stack */
-.nav-links a[href="#stack"].active::after {
-  background-color: #4fc3f7;   /* blue */
-}
-
-/* Credentials & Training */
-.nav-links a[href="#certifications"].active::after {
-  background-color: #a78bfa;   /* violet */
-}
-
-/* Contact */
-.nav-links a[href="#contact"].active::after {
-  background-color: #38bdf8;   /* light blue */
-}
-
-/* About / Resume (Hero) */
 .nav-links a[href="#resume"].active::after {
-  background-color: #e5e7eb;   /* soft neutral */
+  background-color: #e5e7eb;
 }
 
+.nav-links a[href="#projects"].active::after {
+  background-color: #22c55e;
+}
+
+.nav-links a[href="#stack"].active::after {
+  background-color: #4fc3f7;
+}
+
+.nav-links a[href="#certifications"].active::after {
+  background-color: #a78bfa;
+}
+
+.nav-links a[href="#contact"].active::after {
+  background-color: #38bdf8;
+}
 
 .nav-links a:hover::after {
   transform: scaleX(1);
@@ -781,6 +776,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
