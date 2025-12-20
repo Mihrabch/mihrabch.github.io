@@ -237,6 +237,13 @@ html {
   box-shadow: none !important;
 }
 
+/* BUT navbar links must NEVER use text-decoration */
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
+  text-decoration: none;
+}
+
 /* =====================
    STICKY OFFSET
 ===================== */
@@ -918,6 +925,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
