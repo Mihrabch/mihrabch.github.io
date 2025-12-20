@@ -194,8 +194,9 @@ html {
   height: 2px;
 
   /* 👇 NEVER allow zero width */
-  width: 40px;                 /* default visible width */
-
+ -  width: 40px;
++  width: 0;
++  opacity: 0;
   background-color: #4fc3f7;
 
   /* 🔑 critical */
@@ -916,6 +917,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
