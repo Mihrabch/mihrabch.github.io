@@ -134,17 +134,24 @@ html {
 /* sliding underline */
 .nav-underline {
   position: absolute;
-  bottom: 6;
+  bottom: -6px;
   left: 0;
   height: 2px;
   width: 0;
+
+  background-color: transparent;   /* 👈 important */
   border-radius: 2px;
-  background-color: #4fc3f7;
+
+  opacity: 0;                      /* 👈 hide initially */
+  pointer-events: none;
+
   transition:
     left 0.35s cubic-bezier(.4,0,.2,1),
     width 0.35s cubic-bezier(.4,0,.2,1),
-    background-color 0.25s ease;
+    background-color 0.25s ease,
+    opacity 0.15s ease;
 }
+
 .nav-links a {
   --accent: #cbd5e1; /* fallback */
 }
@@ -789,6 +796,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
