@@ -334,6 +334,25 @@ html {
   color: #000;
   border-radius: 8px;
 }
+.resume-actions {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+/* Secondary (outline) button */
+.btn-outline {
+  background: transparent;
+  color: #4fc3f7;
+  border: 1px solid rgba(79,195,247,0.6);
+}
+
+.btn-outline:hover {
+  background: rgba(79,195,247,0.15);
+  opacity: 1;
+}
 
 /* =====================
    STACK & CERTS
@@ -642,6 +661,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
