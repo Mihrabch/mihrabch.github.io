@@ -29,9 +29,11 @@
 
 <!-- ================= JS ================= -->
 <script>
-const navLinks = document.querySelectorAll(".nav-links a:not(.resume-btn)");
+const navLinks = document.querySelectorAll(".nav-links a");
 const underline = document.querySelector(".nav-underline");
+const sections = document.querySelectorAll("section, footer");
 
+/* Move underline */
 function moveUnderline(el) {
   if (!el) return;
 
@@ -44,25 +46,40 @@ function moveUnderline(el) {
     getComputedStyle(el).getPropertyValue("--accent");
 }
 
-/* hover preview */
+/* Hover preview */
 navLinks.forEach(link => {
   link.addEventListener("mouseenter", () => moveUnderline(link));
   link.addEventListener("mouseleave", () => {
-    const active =
-      document.querySelector(".nav-links a.active") ||
-      document.querySelector('.nav-links a[href="#about"]');
+    const active = document.querySelector(".nav-links a.active");
     moveUnderline(active);
   });
 });
 
-/* initial underline */
-window.addEventListener("load", () => {
-  const active =
-    document.querySelector(".nav-links a.active") ||
-    document.querySelector('.nav-links a[href="#about"]');
-  moveUnderline(active);
-});
+/* Scroll-based active section */
+function setActiveNav() {
+  let current = null;
+
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 120 && rect.bottom >= 120) {
+      current = section.id;
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+      moveUnderline(link);
+    }
+  });
+}
+
+/* Init */
+window.addEventListener("scroll", setActiveNav);
+window.addEventListener("load", setActiveNav);
 </script>
+
 
 </body>
 </html>
@@ -273,6 +290,7 @@ Actively seeking roles in data science, analytics, modeling, and machine learnin
 </body>
 </html>
   
+
 
 
 
