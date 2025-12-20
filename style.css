@@ -113,8 +113,8 @@ html {
 /* .nav-links {
   display: flex;
   flex-wrap: nowrap;               /* keep one line */
-  min-width: max-content;          /* prevent collapse */
-} */
+ /*  min-width: max-content;          /* prevent collapse */
+/* } */
 
 .nav-links {
   position: relative;
@@ -210,15 +210,15 @@ html {
 }
 
 
-/* 
+
 .nav-links a {
   --accent: #cbd5e1; /* fallback */
-} */
+}
 
 /* Active nav link (does NOT change color, only state) */
-/* .nav-links a.active {
+.nav-links a.active {
   font-weight: 600;
-} */
+}
 .nav-links a,
 .resume-btn {
   flex-shrink: 0;
