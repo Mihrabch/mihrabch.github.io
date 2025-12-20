@@ -185,6 +185,28 @@ html {
 .stat-box strong {
   font-size: 1.1rem;
 }
+/* ===== Stack & Certification Side-by-Side Layout ===== */
+
+.stack-cert-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .stack-cert-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+}
+
+.stack-bg,
+.cert-bg {
+  height: 100%;
+}
+
+
 
 /* =====================
    SECTIONS
@@ -511,6 +533,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
