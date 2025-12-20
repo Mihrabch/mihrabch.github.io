@@ -55,17 +55,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.resume-btn,
-.resume-btn:hover,
-.resume-btn:focus,
-.resume-btn:active {
-  opacity: 1;
-}
-
-.resume-btn:hover {
-  text-decoration: none;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -169,30 +158,24 @@ html {
 /* =====================
    RESUME BUTTON
 ===================== */
-.resume-btn {
+.resume-btn,
+.resume-btn:hover,
+.resume-btn:focus,
+.resume-btn:active {
   margin-left: 1rem;
   padding: 0.4rem 0.8rem;
   font-size: 0.8rem;
   font-weight: 600;
-
   color: #064e3b;
   background: #dcfce7;
-
   border: 1px solid #22c55e;
   border-radius: 999px;
-
-  opacity: 1;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.resume-btn:hover,
-.resume-btn:focus,
-.resume-btn:active {
-  background: #bbf7d0;
-  color: #022c22;
   opacity: 1;
   text-decoration: none;
+  box-shadow: none;
+  transform: none;
 }
+
 
 /* =====================
    HERO (COMPACT + GLOW)
@@ -797,6 +780,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
