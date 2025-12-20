@@ -593,12 +593,9 @@ html {
 
 .cert-card li {
   padding: 0.6rem 0;
-  border-bottom: 1px dashed rgba(255,255,255,0.1);
+  border-bottom: none;   /* 👈 removes the line */
 }
 
-.cert-card li:last-child {
-  border-bottom: none;
-}
 
 .cert-card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -622,6 +619,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
