@@ -192,31 +192,33 @@ html {
   left: 0;
 
   height: 2px;
-  width: 40px;
 
-  background-color: #ffffff;
+  /* 👇 NEVER allow zero width */
+  width: 40px;                 /* default visible width */
 
-  border-radius: 0;
+  background-color: #4fc3f7;
+
+  /* 🔑 critical */
+  border-radius: 0;            /* prevents arrow cap */
+
   pointer-events: none;
 
-  opacity: 0;                 /* 👈 KEY */
   transition:
     left 0.35s cubic-bezier(.4,0,.2,1),
     width 0.35s cubic-bezier(.4,0,.2,1),
-    opacity 0.15s ease;
+    background-color 0.25s ease;
 }
 
 
-
-
+/* 
 .nav-links a {
   --accent: #cbd5e1; /* fallback */
-}
+} */
 
 /* Active nav link (does NOT change color, only state) */
-.nav-links a.active {
+/* .nav-links a.active {
   font-weight: 600;
-}
+} */
 .nav-links a,
 .resume-btn {
   flex-shrink: 0;
@@ -914,6 +916,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
