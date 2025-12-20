@@ -145,7 +145,7 @@ html {
   padding: 0.4rem 0.75rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #FF0000;
+  color: #022c22;   /* dark green/near-black text */
   background: linear-gradient(
     135deg,
     #22c55e,
@@ -744,6 +744,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
