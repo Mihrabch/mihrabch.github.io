@@ -3,29 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Mihrab Chowdhury — Data & Analytics Scientist</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (ICONS) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-
-  <!-- YOUR CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#stack">Stack</a>
+    <a href="#certifications">Credentials</a>
+    <a href="#contact">Contact</a>
+
+    <a href="CV_Chowdhury.pdf" class="resume-btn" target="_blank">Resume</a>
+
+    <span class="nav-underline"></span>
+  </nav>
+</header>
+
+<!-- ================= JS ================= -->
 <script>
-const navLinks = document.querySelectorAll(".nav-links a");
+const navLinks = document.querySelectorAll(".nav-links a:not(.resume-btn)");
 const underline = document.querySelector(".nav-underline");
 
 function moveUnderline(el) {
+  if (!el) return;
+
   const rect = el.getBoundingClientRect();
   const parentRect = el.parentElement.getBoundingClientRect();
 
@@ -41,8 +50,7 @@ navLinks.forEach(link => {
   link.addEventListener("mouseleave", () => {
     const active =
       document.querySelector(".nav-links a.active") ||
-      document.querySelector('.nav-links a[href="#resume"]');
-
+      document.querySelector('.nav-links a[href="#about"]');
     moveUnderline(active);
   });
 });
@@ -51,15 +59,14 @@ navLinks.forEach(link => {
 window.addEventListener("load", () => {
   const active =
     document.querySelector(".nav-links a.active") ||
-    document.querySelector('.nav-links a[href="#resume"]');
-
+    document.querySelector('.nav-links a[href="#about"]');
   moveUnderline(active);
 });
 </script>
 
-
 </body>
 </html>
+
 
 <!-- ================= NAVBAR ================= -->
 <header class="navbar">
@@ -266,6 +273,7 @@ Actively seeking roles in data science, analytics, modeling, and machine learnin
 </body>
 </html>
   
+
 
 
 
