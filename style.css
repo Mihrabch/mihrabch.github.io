@@ -54,6 +54,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.resume-btn:hover {
+  text-decoration: none;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -188,33 +192,42 @@ html {
 /* =====================
    RESUME BUTTON
 ===================== */
-.resume-btn,
-.resume-btn:hover,
-.resume-btn:focus,
-.resume-btn:active {
+/* =====================
+   RESUME BUTTON — STATIC
+===================== */
+.resume-btn {
   margin-left: 1rem;
   padding: 0.4rem 0.8rem;
   font-size: 0.8rem;
   font-weight: 600;
+
   color: #064e3b;
   background: #dcfce7;
+
   border: 1px solid #22c55e;
   border-radius: 999px;
+
   opacity: 1;
   text-decoration: none;
+
+  /* 🚫 Disable ALL animation */
+  transition: none !important;
+}
+
+/* Lock ALL states to look identical */
+.resume-btn:hover,
+.resume-btn:focus,
+.resume-btn:active,
+.resume-btn:visited {
+  color: #064e3b;
+  background: #dcfce7;
+  border-color: #22c55e;
+
+  opacity: 1;
+  text-decoration: none;
+
   box-shadow: none;
   transform: none;
-}
-@media (max-width: 480px) {
-  .nav-links a {
-    margin: 0 0.5rem;
-    font-size: 0.8rem;
-  }
-
-  .resume-btn {
-    margin-left: 0.6rem;
-    padding: 0.35rem 0.7rem;
-  }
 }
 
 
@@ -820,6 +833,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
