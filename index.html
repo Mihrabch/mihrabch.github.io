@@ -38,14 +38,25 @@ function moveUnderline(el) {
 /* hover preview */
 navLinks.forEach(link => {
   link.addEventListener("mouseenter", () => moveUnderline(link));
+  link.addEventListener("mouseleave", () => {
+    const active =
+      document.querySelector(".nav-links a.active") ||
+      document.querySelector('.nav-links a[href="#resume"]');
+
+    moveUnderline(active);
+  });
 });
 
-/* keep underline on active section */
+/* initial underline */
 window.addEventListener("load", () => {
-  const active = document.querySelector(".nav-links a.active");
-  if (active) moveUnderline(active);
+  const active =
+    document.querySelector(".nav-links a.active") ||
+    document.querySelector('.nav-links a[href="#resume"]');
+
+  moveUnderline(active);
 });
 </script>
+
 
 </body>
 </html>
@@ -255,6 +266,7 @@ Actively seeking roles in data science, analytics, modeling, and machine learnin
 </body>
 </html>
   
+
 
 
 
