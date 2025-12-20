@@ -82,9 +82,18 @@ html {
   border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
+
 .navbar {
-  overflow: hidden;
+  overflow-x: auto;        /* allow horizontal scroll */
+  -webkit-overflow-scrolling: touch;
 }
+
+.nav-links {
+  display: flex;
+  flex-wrap: nowrap;      /* keep in one line */
+  min-width: max-content; /* prevent shrinking */
+}
+
 
 
 .navbar.scrolled {
@@ -160,6 +169,10 @@ html {
 .nav-links a.active {
   font-weight: 600;
 }
+.nav-links a,
+.resume-btn {
+  flex-shrink: 0;
+}
 
 /* =====================
    STICKY OFFSET
@@ -191,6 +204,17 @@ html {
   text-decoration: none;
   box-shadow: none;
   transform: none;
+}
+@media (max-width: 480px) {
+  .nav-links a {
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .resume-btn {
+    margin-left: 0.6rem;
+    padding: 0.35rem 0.7rem;
+  }
 }
 
 
@@ -796,6 +820,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
