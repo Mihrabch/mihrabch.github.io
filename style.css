@@ -144,6 +144,11 @@ html {
   --accent: #cbd5e1; /* fallback */
 }
 
+/* Active nav link (does NOT change color, only state) */
+.nav-links a.active {
+  font-weight: 600;
+}
+
 /* =====================
    STICKY OFFSET
 ===================== */
@@ -780,6 +785,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
