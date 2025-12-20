@@ -128,6 +128,14 @@ html {
   background: rgba(15, 22, 32, 0.95);
   box-shadow: 0 8px 25px rgba(0,0,0,0.35);
 }
+/* ===== Sticky Navbar Offset ===== */
+#resume,
+#projects,
+#stack,
+#certifications,
+#contact {
+  scroll-margin-top: 80px;
+}
 /* ===== Resume Button (Navbar CTA) ===== */
 
 .resume-btn {
@@ -723,6 +731,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
