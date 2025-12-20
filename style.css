@@ -327,7 +327,8 @@ html {
 
 /* ===== Section Background Variations ===== */
 
-.stats-bg {
+/* ===== Section Background Variations ===== */
+
 .stats-bg {
   background: linear-gradient(135deg, #0f172a, #020617);
 }
@@ -363,21 +364,27 @@ html {
 
 /* ===== Project Themes ===== */
 
-.project-health {
-  background: linear-gradient(135deg, rgba(34,197,94,0.18), #0f1620);
+/* ===== Project Themes ===== */
+
+.projects-bg .project-health {
+  background: linear-gradient(135deg, rgba(34,197,94,0.22), #0f1620);
 }
 
-.project-water {
-  background: linear-gradient(135deg, rgba(56,189,248,0.18), #0f1620);
+.projects-bg .project-water {
+  background: linear-gradient(135deg, rgba(56,189,248,0.22), #0f1620);
 }
 
-.project-food {
-  background: linear-gradient(135deg, rgba(249,115,22,0.18), #0f1620);
+.projects-bg .project-food {
+  background: linear-gradient(135deg, rgba(249,115,22,0.22), #0f1620);
 }
 
-.project-mobility {
-  background: linear-gradient(135deg, rgba(167,139,250,0.18), #0f1620);
+.projects-bg .project-mobility {
+  background: linear-gradient(135deg, rgba(167,139,250,0.22), #0f1620);
 }
+.project-health { border-left: 4px solid #22c55e; }
+.project-water  { border-left: 4px solid #38bdf8; }
+.project-food   { border-left: 4px solid #f97316; }
+.project-mobility { border-left: 4px solid #a78bfa; }
 
 
 .stack-card {
@@ -413,6 +420,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
