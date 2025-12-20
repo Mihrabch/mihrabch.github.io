@@ -86,11 +86,13 @@ html {
   margin: 0 0.8rem;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #e6e6e6;
+  color: #cbd5e1;     /* neutral gray */
   position: relative;
+  transition: color 0.2s ease;
 }
 
-.nav-links a::after {
+
+/* .nav-links a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -99,11 +101,28 @@ html {
   height: 2px;
   background: #4fc3f7;
   transition: width 0.25s ease;
+} */
+/* Navbar active link colors by section */
+.nav-links a[href="#projects"].active {
+  color: #22c55e;
 }
 
-.nav-links a:hover::after {
-  width: 100%;
+.nav-links a[href="#stack"].active {
+  color: #4fc3f7;
 }
+
+.nav-links a[href="#certifications"].active {
+  color: #a78bfa;
+}
+
+.nav-links a[href="#contact"].active {
+  color: #38bdf8;
+}
+
+.nav-links a:hover {
+  color: #e5e7eb;
+}
+
 
 .navbar.scrolled {
   background: rgba(15, 22, 32, 0.95);
@@ -284,9 +303,21 @@ html {
   padding: 1.2rem 1rem;
 }
 
-.section-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
+/* Section-specific title colors */
+#projects .section-title {
+  color: #22c55e;   /* green */
+}
+
+#stack .section-title {
+  color: #4fc3f7;   /* blue */
+}
+
+#certifications .section-title {
+  color: #a78bfa;   /* violet */
+}
+
+#contact h2 {
+  color: #38bdf8;   /* lighter blue */
 }
 
 /* =====================
@@ -692,6 +723,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
