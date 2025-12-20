@@ -109,6 +109,29 @@ html {
   background: rgba(15, 22, 32, 0.95);
   box-shadow: 0 8px 25px rgba(0,0,0,0.35);
 }
+/* ===== Resume Button (Navbar CTA) ===== */
+
+.resume-btn {
+  margin-left: 1rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #020617;
+  background: linear-gradient(
+    135deg,
+    #4fc3f7,
+    #38bdf8
+  );
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79,195,247,0.45);
+  opacity: 1;
+}
+
 
 /* =====================
    HERO (COMPACT + GLOW)
@@ -669,6 +692,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
