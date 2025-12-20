@@ -82,15 +82,24 @@ html {
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+.navbar.scrolled {
+  background: rgba(15, 22, 32, 0.95);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+/* =====================
+   NAV LINKS
+===================== */
 .nav-links a {
   margin: 0 0.8rem;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #cbd5e1;     /* neutral gray */
+  color: #cbd5e1;
   position: relative;
   transition: color 0.2s ease;
 }
 
+/* underline base */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -98,22 +107,26 @@ html {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background: transparent;
+  background-color: transparent;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
+/* hover underline (temporary) */
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  background-color: rgba(255,255,255,0.35);
+}
+
+/* active underline (persistent) */
 .nav-links a.active::after {
   transform: scaleX(1);
 }
 
-.nav-links a.active::after {
-  transform: scaleX(1);
-}
-
-/* Navbar active link colors by section */
-/* Projects */
+/* =====================
+   ACTIVE SECTION COLORS
+===================== */
 .nav-links a[href="#resume"].active::after {
   background-color: #e5e7eb;
 }
@@ -134,21 +147,9 @@ html {
   background-color: #38bdf8;
 }
 
-.nav-links a:hover::after {
-  transform: scaleX(1);
-}
-
-/* IMPORTANT: active state must win */
-.nav-links a.active::after {
-  transform: scaleX(1);
-}
-
-
-.navbar.scrolled {
-  background: rgba(15, 22, 32, 0.95);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
-}
-/* ===== Sticky Navbar Offset ===== */
+/* =====================
+   STICKY OFFSET
+===================== */
 #resume,
 #projects,
 #stack,
@@ -156,21 +157,17 @@ html {
 #contact {
   scroll-margin-top: 80px;
 }
-/* ===== Resume Button (Navbar CTA) ===== */
 
-/* ===== Resume Button (Navbar CTA) ===== */
-
+/* =====================
+   RESUME BUTTON
+===================== */
 .resume-btn {
   margin-left: 1rem;
   padding: 0.4rem 0.75rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #022c22;   /* dark green/near-black text */
-  background: linear-gradient(
-    135deg,
-    #22c55e,
-    #16a34a
-  );
+  color: #022c22;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   border-radius: 999px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -178,7 +175,6 @@ html {
 .resume-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(34,197,94,0.45);
-  opacity: 1;
 }
 
 /* =====================
@@ -776,6 +772,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
