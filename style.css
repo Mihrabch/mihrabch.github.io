@@ -338,23 +338,20 @@ html {
 /* =====================
    STACK & CERTS
 ===================== */
-.stack-text,
+/* Stack-like text rhythm for Certifications */
 .cert-list {
-  line-height: 1.35;        /* tighter than stack text */
-  margin: 0;
-  padding: 0;
-}
-
-.cert-card li {
-  padding: 0.35rem 0;       /* reduced vertical padding */
-  margin: 0;                /* remove inherited margins */
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #d1d5db;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
 
 .cert-list li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.45rem;   /* matches stack paragraph spacing */
 }
+
 
 /* =====================
    CONTACT
@@ -605,16 +602,23 @@ html {
   pointer-events: none;
 }
 .cert-card strong {
+  display: inline;
+  margin-right: 0.4rem;
   color: #c4b5fd;
   font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 
-.cert-card li {
+/* .cert-card li {
   padding: 0.6rem 0;
   border-bottom: none;   /* 👈 removes the line */
-}
+} */
 
+.stack-text {
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
 
 .cert-card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -638,6 +642,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
