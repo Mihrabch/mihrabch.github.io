@@ -192,22 +192,20 @@ html {
   left: 0;
 
   height: 2px;
+  width: 40px;
 
-  /* 👇 NEVER allow zero width */
-  width: 40px;                 /* default visible width */
+  background-color: #ffffff;
 
-  background-color: #4fc3f7;
-
-  /* 🔑 critical */
-  border-radius: 0;            /* prevents arrow cap */
-
+  border-radius: 0;
   pointer-events: none;
 
+  opacity: 0;                 /* 👈 KEY */
   transition:
     left 0.35s cubic-bezier(.4,0,.2,1),
     width 0.35s cubic-bezier(.4,0,.2,1),
-    background-color 0.25s ease;
+    opacity 0.15s ease;
 }
+
 
 
 
