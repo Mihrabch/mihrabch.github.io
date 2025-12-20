@@ -144,18 +144,29 @@ html {
 ===================== */
 .resume-btn {
   margin-left: 1rem;
-  padding: 0.4rem 0.75rem;
+  padding: 0.4rem 0.8rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #022c22;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+
+  /* Better text contrast */
+  color: #064e3b;            /* deep green text */
+
+  /* Calm, readable background */
+  background: #dcfce7;       /* very light green */
+
+  border: 1px solid #22c55e;
   border-radius: 999px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+/* Hover: subtle, no glow */
 .resume-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(34,197,94,0.45);
+  background: #bbf7d0;
+  color: #022c22;
+  box-shadow: none;
+  transform: none;
+  opacity: 1;
 }
 
 /* =====================
@@ -758,6 +769,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
