@@ -9,11 +9,31 @@
 
 
 body {
-  font-family: "Inter", system-ui, sans-serif;
-  line-height: 1.6;
-  background: #0b0f14;
+  background:
+    radial-gradient(
+      1200px 600px at 10% -10%,
+      rgba(79,195,247,0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      800px 500px at 90% 10%,
+      rgba(167,139,250,0.06),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #020617 0%,
+      #020617 40%,
+      #01030a 100%
+    );
   color: #e6e6e6;
 }
+
+.section {
+  padding: 2rem 1rem;
+  position: relative;
+}
+
 
 a {
   color: #4fc3f7;
@@ -27,6 +47,8 @@ a:hover {
 html {
   scroll-behavior: smooth;
 }
+
+
 
 /* =====================
    NAVBAR
@@ -167,6 +189,19 @@ html {
 /* =====================
    SECTIONS
 ===================== */
+.section::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,0.08),
+    transparent
+  );
+  margin-bottom: 1.8rem;
+}
+
 .section {
   padding: 1.2rem 1rem;
 }
@@ -334,15 +369,32 @@ html {
 }
 
 .projects-bg {
-  background: linear-gradient(135deg, #020617, #020617);
+  background:
+    radial-gradient(
+      600px 300px at 50% 0%,
+      rgba(56,189,248,0.06),
+      transparent 60%
+    );
 }
 
-.stack-bg {
-  background: linear-gradient(135deg, #020617, #030712);
-}
 
+.stack-bg,
 .cert-bg {
-  background: linear-gradient(135deg, #030712, #020617);
+  position: relative;
+}
+
+.stack-bg::before,
+.cert-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      500px 300px at 80% 0%,
+      rgba(79,195,247,0.04),
+      transparent 60%
+    );
+  pointer-events: none;
 }
 
 .contact-bg {
@@ -459,6 +511,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
