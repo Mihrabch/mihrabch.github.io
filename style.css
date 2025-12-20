@@ -430,21 +430,20 @@ html {
   color: #000;
   border-radius: 8px;
 }
+
 .resume-actions {
   margin-top: 0.8rem;
-
   display: flex;
-  justify-content: center;   /* 👈 horizontal centering */
+  justify-content: center;
   align-items: center;
-
   gap: 0.6rem;
-  width: 100%;               /* 👈 ensures centering in hero */
+  width: 100%;
   text-align: center;
 }
+
 .resume-actions .btn {
   min-width: 140px;
 }
-
 
 /* Secondary (outline) button */
 .btn-outline {
@@ -789,6 +788,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
