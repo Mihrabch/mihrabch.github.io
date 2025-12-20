@@ -33,7 +33,6 @@ const navLinks = document.querySelectorAll(".nav-links a");
 const underline = document.querySelector(".nav-underline");
 const sections = document.querySelectorAll("section, footer");
 
-/* Move underline */
 function moveUnderline(el) {
   if (!el) return;
 
@@ -56,7 +55,7 @@ navLinks.forEach(link => {
 });
 
 /* Scroll-based active section */
-function setActiveNav() {
+function updateActiveNav() {
   let current = null;
 
   sections.forEach(section => {
@@ -75,9 +74,8 @@ function setActiveNav() {
   });
 }
 
-/* Init */
-window.addEventListener("scroll", setActiveNav);
-window.addEventListener("load", setActiveNav);
+window.addEventListener("scroll", updateActiveNav);
+window.addEventListener("load", updateActiveNav);
 </script>
 
 
@@ -290,6 +288,7 @@ Actively seeking roles in data science, analytics, modeling, and machine learnin
 </body>
 </html>
   
+
 
 
 
