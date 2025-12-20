@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>   
-  <meta charset="UTF-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
-  <title>Mohammad Mihrab Uddin Chowdhury — Data & Analytics Scientist</title>
-                
-  <!-- Fonts & Icons -->                     
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<script>
+const navLinks = document.querySelectorAll(".nav-links a");
+const underline = document.querySelector(".nav-underline");
 
-  <link rel="stylesheet" href="style.css" />            
-</head>
-                   
- <script>
-  const navbar = document.getElementById("navbar");
+function moveUnderline(el) {
+  const rect = el.getBoundingClientRect();
+  const parentRect = el.parentElement.getBoundingClientRect();
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
+  underline.style.left = `${rect.left - parentRect.left}px`;
+  underline.style.width = `${rect.width}px`;
+  underline.style.backgroundColor =
+    getComputedStyle(el).getPropertyValue("--accent");
+}
+
+/* hover preview */
+navLinks.forEach(link => {
+  link.addEventListener("mouseenter", () => moveUnderline(link));
+});
+
+/* keep underline on active section */
+window.addEventListener("load", () => {
+  const active = document.querySelector(".nav-links a.active");
+  if (active) moveUnderline(active);
+});
 </script>
- 
+
 <body>
 
 <!-- ================= NAVBAR ================= -->
-<header class="navbar" id="navbar">
+<header class="navbar">
   <nav class="nav-links">
-  <a href="#resume">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#stack">Technical Stack</a>
-  <a href="#certifications">Credentials</a>
-  <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#stack">Stack</a>
+    <a href="#certifications">Credentials</a>
+    <a href="#contact">Contact</a>
 
-  <a href="resume.pdf" class="resume-btn" target="_blank">Resume</a>
-</nav>
-
+    <span class="nav-underline"></span>
+  </nav>
 </header>
+
 
 
 <!-- ================= HERO ================= -->
@@ -227,6 +228,7 @@ Actively seeking roles in data science, analytics, modeling, and machine learnin
 </body>
 </html>
   
+
 
 
 
