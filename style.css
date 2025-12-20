@@ -408,6 +408,16 @@ html {
 
 /* ===== Section Background Variations ===== */
 
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  padding: 1.5rem;
+
+  max-width: 1100px;
+  margin: 0 auto;   /* 👈 THIS centers the cards */
+}
+
 .stats-bg {
   background:
     radial-gradient(
@@ -426,8 +436,10 @@ html {
       #030712
     );
   border-radius: 20px;
-  margin: 1.5rem 1rem;
+  margin: 2rem auto;     /* 👈 center section */
+  max-width: 1200px;     /* 👈 prevent full-width stretch */
 }
+
 
 .projects-bg {
   background:
@@ -572,6 +584,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
