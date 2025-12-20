@@ -64,9 +64,6 @@ html {
 /* =====================
    NAVBAR
 ===================== */
-.navbar {
-  overflow: hidden;   /* 👈 THIS kills the arrow completely */
-}
 
 .navbar {
   position: sticky;
@@ -85,6 +82,10 @@ html {
   border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
+.navbar {
+  overflow: hidden;
+}
+
 
 .navbar.scrolled {
   background: rgba(15, 22, 32, 0.95);
@@ -133,7 +134,7 @@ html {
 /* sliding underline */
 .nav-underline {
   position: absolute;
-  bottom: -6px;
+  bottom: 6;
   left: 0;
   height: 2px;
   width: 0;
@@ -788,6 +789,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
