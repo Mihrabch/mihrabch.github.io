@@ -213,6 +213,11 @@ html {
   border-radius: 8px;
   backdrop-filter: blur(4px);
 }
+.hero-intent {
+  color: #22c55e;              /* soft green = "open to work" signal */
+  font-weight: 500;
+}
+
 
 /* ATS hidden but parsable */
 .ats-hidden {
@@ -753,6 +758,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
