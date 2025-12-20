@@ -98,10 +98,14 @@ html {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background: transparent;   /* invisible by default */
+  background: transparent;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.nav-links a.active::after {
+  transform: scaleX(1);
 }
 
 .nav-links a.active::after {
@@ -137,8 +141,13 @@ html {
 
 .nav-links a:hover::after {
   transform: scaleX(1);
-  background-color: rgba(255,255,255,0.35);
 }
+
+/* IMPORTANT: active state must win */
+.nav-links a.active::after {
+  transform: scaleX(1);
+}
+
 
 .navbar.scrolled {
   background: rgba(15, 22, 32, 0.95);
@@ -496,9 +505,21 @@ html {
 }
 
 .contact-card i {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin-bottom: 0.3rem;
 }
+.contact-card {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+}
+
+.contact-card:hover i {
+  color: #4fc3f7;   /* or match section accent */
+}
+
 
 .footer-note {
   font-size: 0.7rem;
@@ -760,6 +781,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
