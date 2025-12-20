@@ -271,10 +271,9 @@ a:hover {
     margin: auto;
   }
 
-  .card-grid {
+ .card-grid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1100px;
-    margin: auto;
+    gap: 1.2rem;
   }
 
   .section {
@@ -290,6 +289,7 @@ a:hover {
 /* ===== Section Background Variations ===== */
 
 .stats-bg {
+.stats-bg {
   background: linear-gradient(135deg, #0f172a, #020617);
 }
 
@@ -298,12 +298,11 @@ a:hover {
 }
 
 .stack-bg {
-  background: linear-gradient(135deg, #020617, #020617);
-  border-top: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(135deg, #020617, #030712);
 }
 
 .cert-bg {
-  background: linear-gradient(135deg, #020617, #020617);
+  background: linear-gradient(135deg, #030712, #020617);
 }
 
 .contact-bg {
@@ -326,29 +325,55 @@ a:hover {
 /* ===== Project Themes ===== */
 
 .project-health {
-  border-left: 4px solid #22c55e;
+  background: linear-gradient(135deg, rgba(34,197,94,0.12), #0f1620);
 }
 .project-health i {
   color: #22c55e;
 }
 
 .project-water {
-  border-left: 4px solid #38bdf8;
+  background: linear-gradient(135deg, rgba(56,189,248,0.12), #0f1620);
 }
+
 .project-water i {
   color: #38bdf8;
 }
 
 .project-food {
-  border-left: 4px solid #f97316;
+  background: linear-gradient(135deg, rgba(249,115,22,0.12), #0f1620);
 }
 .project-food i {
   color: #f97316;
 }
 
 .project-mobility {
-  border-left: 4px solid #a78bfa;
+  background: linear-gradient(135deg, rgba(167,139,250,0.12), #0f1620);
 }
 .project-mobility i {
   color: #a78bfa;
+}
+
+.stack-card {
+  background: #0f1620;
+  border-radius: 16px;
+  padding: 1.2rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.cert-card {
+  background: #0f1620;
+  border-radius: 16px;
+  padding: 1.2rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.cert-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.08);
+}
+
+.cert-card li:last-child {
+  border-bottom: none;
 }
