@@ -166,7 +166,7 @@ html {
   color: #022c22;
   box-shadow: none;
   transform: none;
-  opacity: 0;
+  opacity: 0.5;
 }
 
 /* =====================
@@ -772,6 +772,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
