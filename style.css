@@ -400,7 +400,7 @@ html {
 }
 
 .stack-card strong {
-  display: block;
+  display: inline;
   margin-top: 0.8rem;
   margin-bottom: 0.25rem;
   color: #4fc3f7;
@@ -459,6 +459,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
