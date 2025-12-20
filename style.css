@@ -94,6 +94,8 @@ html {
 
   width: 100%;
   overflow-x: hidden;     /* 👈 prevents clipping */
+   list-style: none !important;
+  marker: none !important;
   
   display: flex;
   justify-content: center;
@@ -192,8 +194,9 @@ html {
   left: 0;
 
   height: 2px;
-  width: 0;
-  opacity: 0;
+   transform: scaleX(0);
+  transform-origin: left center;
+   opacity: 0;
   background-color: transparent;
 
   /* 🔑 critical */
@@ -917,6 +920,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
