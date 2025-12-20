@@ -69,7 +69,7 @@ html {
    NAVBAR
 ===================== */
 
-.navbar {
+/* .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -85,23 +85,47 @@ html {
 
   border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: background 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
-.nav-links {
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  overflow-x: hidden;     /* 👈 prevents clipping */
+  
   display: flex;
-  flex-wrap: nowrap;      /* keep in one line */
-  min-width: max-content; /* prevent shrinking */
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.6rem 0.75rem;
+
+  background: rgba(15, 22, 32, 0.65);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .navbar {
   overflow-x: auto;        /* allow horizontal scroll */
   -webkit-overflow-scrolling: touch;
 }
-.nav-links {
+/* .nav-links {
   display: flex;
   flex-wrap: nowrap;               /* keep one line */
   min-width: max-content;          /* prevent collapse */
+} */
+
+.nav-links {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;        /* 👈 KEY FIX */
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem 0.6rem;     /* 👈 tighter spacing on mobile */
+  max-width: 100%;
 }
+
 .nav-links a,
 .resume-btn {
   flex-shrink: 0;                  /* prevent cutting */
@@ -252,6 +276,32 @@ html {
   transform: none;
 }
 
+.resume-btn {
+  flex-shrink: 0;          /* 👈 never shrink away */
+  white-space: nowrap;    /* 👈 text never breaks */
+}
+
+@media (max-width: 640px) {
+
+  .nav-links a {
+    font-size: 0.78rem;
+    margin: 0 0.4rem;
+  }
+
+  .resume-btn {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.75rem;
+    margin-left: 0.4rem;
+  }
+
+  .nav-underline {
+    bottom: -4px;   /* tighter spacing on mobile */
+  }
+}
+
+.nav-underline {
+  max-width: 100%;
+}
 
 /* =====================
    HERO (COMPACT + GLOW)
@@ -855,6 +905,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
