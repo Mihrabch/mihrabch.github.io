@@ -33,6 +33,8 @@ const navLinks = document.querySelectorAll(".nav-links a");
 const underline = document.querySelector(".nav-underline");
 const sections = document.querySelectorAll("section, footer");
 
+let lastActive = null;
+
 function moveUnderline(el) {
   if (!el) return;
 
@@ -51,11 +53,13 @@ function moveUnderline(el) {
 navLinks.forEach(link => {
   link.addEventListener("mouseenter", () => moveUnderline(link));
   link.addEventListener("mouseleave", () => {
-    const active = document.querySelector(".nav-links a.active");
-    moveUnderline(active);
+      if (lastActive) moveUnderline(lastActive);
   });
 });
 
+  // const active = document.querySelector(".nav-links a.active");
+  //   moveUnderline(active);
+  
 /* Scroll-based active section */
 function updateActiveNav() {
   let current = null;
@@ -290,6 +294,7 @@ Actively seeking roles in data science, analytics, modeling, and machine learnin
 </body>
 </html>
   
+
 
 
 
