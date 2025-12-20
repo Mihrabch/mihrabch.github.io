@@ -166,20 +166,23 @@ html {
   position: absolute;
   bottom: -6px;
   left: 0;
+
   height: 2px;
-  width: 0;
 
-  background-color: transparent;   /* 👈 important */
-  border-radius: 2px;
+  /* 👇 NEVER allow zero width */
+  width: 40px;                 /* default visible width */
 
-  opacity: 0;                      /* 👈 hide initially */
+  background-color: #4fc3f7;
+
+  /* 🔑 critical */
+  border-radius: 0;            /* prevents arrow cap */
+
   pointer-events: none;
 
   transition:
     left 0.35s cubic-bezier(.4,0,.2,1),
     width 0.35s cubic-bezier(.4,0,.2,1),
-    background-color 0.25s ease,
-    opacity 0.15s ease;
+    background-color 0.25s ease;
 }
 
 
@@ -852,6 +855,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
