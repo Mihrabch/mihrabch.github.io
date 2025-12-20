@@ -224,6 +224,17 @@ html {
   flex-shrink: 0;
 }
 
+
+.nav-links a,
+.nav-links a:focus,
+.nav-links a:focus-visible,
+.nav-links a:active,
+.nav-links a:visited {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* =====================
    STICKY OFFSET
 ===================== */
@@ -905,6 +916,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
