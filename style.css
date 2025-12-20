@@ -65,6 +65,10 @@ html {
    NAVBAR
 ===================== */
 .navbar {
+  overflow: hidden;   /* 👈 THIS kills the arrow completely */
+}
+
+.navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -785,6 +789,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
