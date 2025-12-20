@@ -55,7 +55,16 @@ a:hover {
   text-decoration: underline;
 }
 
+.resume-btn,
+.resume-btn:hover,
+.resume-btn:focus,
+.resume-btn:active {
+  opacity: 1;
+}
 
+.resume-btn:hover {
+  text-decoration: none;
+}
 
 html {
   scroll-behavior: smooth;
@@ -124,7 +133,7 @@ html {
   --accent: #cbd5e1; /* fallback */
 }
 
-.nav-links a[href="#resume"]         { --accent: #e5e7eb; }
+.nav-links a[href="#about"]         { --accent: #e5e7eb; }
 .nav-links a[href="#projects"]       { --accent: #22c55e; }
 .nav-links a[href="#stack"]          { --accent: #4fc3f7; } */
 .nav-links a[href="#certifications"] { --accent: #a78bfa; }
@@ -160,9 +169,13 @@ html {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.resume-btn:hover {
+.resume-btn:hover,
+.resume-btn:focus,
+.resume-btn:active {
   background: #bbf7d0;
   color: #022c22;
+  opacity: 1;
+  text-decoration: none;
 }
 
 /* =====================
@@ -768,6 +781,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
