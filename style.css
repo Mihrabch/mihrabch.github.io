@@ -482,7 +482,7 @@ html {
 }
 
 .contact-card i {
-  font-size: 1.8rem;
+  font-size: 4rem;
   margin-bottom: 0.3rem;
 }
 .contact-card {
@@ -758,6 +758,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
