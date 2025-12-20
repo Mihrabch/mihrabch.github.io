@@ -197,7 +197,7 @@ html {
  -  width: 40px;
 +  width: 0;
 +  opacity: 0;
-  background-color: #4fc3f7;
+  background-color: transparent;
 
   /* 🔑 critical */
   border-radius: 0;            /* prevents arrow cap */
@@ -920,6 +920,7 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+
 
 
 
