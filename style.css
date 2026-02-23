@@ -925,6 +925,53 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
+/* =====================
+   HERO LAYOUT (PHOTO LEFT)
+===================== */
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Photo */
+.hero-photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(79,195,247,0.6);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Text block */
+.hero-content {
+  max-width: 520px;
+  text-align: left;
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 640px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-photo img {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 
 
