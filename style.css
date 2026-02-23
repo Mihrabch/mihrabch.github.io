@@ -926,40 +926,47 @@ html {
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
 /* =====================
-   HERO LAYOUT (PHOTO LEFT)
+   HERO LAYOUT (PHOTO LEFT — POLISHED)
 ===================== */
 
 .hero-inner {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  justify-content: flex-start;   /* 🔥 push content left */
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
-/* Photo */
+/* Photo container */
+.hero-photo {
+  flex-shrink: 0;
+}
+
+/* 🔥 Square professional headshot */
 .hero-photo img {
-  width: 120px;
-  height: 120px;
+  width: 160px;          /* bigger */
+  height: 160px;         /* square */
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid rgba(79,195,247,0.6);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  border-radius: 16px;   /* square with soft corners */
+  border: 3px solid rgba(79,195,247,0.65);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.45);
 }
 
 /* Text block */
 .hero-content {
-  max-width: 520px;
+  max-width: 560px;
   text-align: left;
 }
 
 /* =====================
-   MOBILE
+   MOBILE (important)
 ===================== */
 
 @media (max-width: 640px) {
+
   .hero-inner {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
@@ -968,68 +975,10 @@ html {
   }
 
   .hero-photo img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
