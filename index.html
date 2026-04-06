@@ -166,64 +166,68 @@ window.addEventListener("load", updateActiveNav);
 <section id="projects" class="section projects-bg">
   <h2 class="section-title">Selected Projects</h2>
 
-  <div class="card-grid">
+<div class="card-grid">
+
   <div class="project-card project-health">
-  <div class="project-header">
-    <i class="fa-solid fa-heart-pulse"></i>
-    <h3>BRFSS Health Risk Prediction</h3>
-  </div>
-      <p>Nationwide ML modeling on 440k+ survey records with imbalance correction.</p>
-      <ul>
-        <li>ROC-AUC up to <strong>0.87</strong></li>
-        <li>Survey weighting + SMOTE</li>
-        <li>Feature importance & explainability</li>
-      </ul>
-      <a href="https://github.com/ragibayon/diabetes-ml-brfss" target="_blank" class="btn">GitHub</a>
+    <div class="project-header">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <h3>Diabetes Risk Prediction (BRFSS)</h3>
     </div>
-
-    <div class="project-card project-water">
-  <div class="project-header">
-    <i class="fa-solid fa-water"></i>
-    <h3>Wastewater Viral Load Forecasting</h3>
+    <p>Published (Elsevier, 2024). Built ML models on 440k+ CDC BRFSS records to predict diabetes risk under severe class imbalance (86:14).</p>
+    <ul>
+      <li>Compared ENN, SMOTE, SMOTE-ENN, SMOTE-Tomek</li>
+      <li>Best: <strong>ENN + Gradient Boosting</strong> → Recall 71.7%, AUC 0.791</li>
+      <li>~<strong>14% recall improvement</strong> over baseline</li>
+      <li>Voting ensemble stabilized: Recall 71.4%, AUC 0.789</li>
+      <li>Key predictors: Age, BMI, Blood Pressure</li>
+    </ul>
+    <a href="https://github.com/Mihrabch/EndToEnd-Investigation-of-ML-Algorithms-and-Data-Augmentation-for-Imbalanced-Datasets" target="_blank" class="btn">View on GitHub</a>
   </div>
-      <p>Time-series prediction of RNA concentration to forecast hospitalizations.</p>
-      <ul>
-        <li>Lag discovery (7–21 days)</li>
-        <li>ARIMA, splines, ML regressors</li>
-        <li>Forecast error ↓ <strong>18%</strong></li>
-      </ul>
-      <a href="#" class="btn">GitHub</a>
+
+  <div class="project-card project-water">
+    <div class="project-header">
+      <i class="fa-solid fa-water"></i>
+      <h3>Wastewater COVID-19 Forecasting</h3>
     </div>
-
-    <div class="project-card project-food">
-  <div class="project-header">
-    <i class="fa-solid fa-utensils"></i>
-    <h3>NYC Restaurant Risk Analytics</h3>
+    <p>Accepted (Elsevier, 2026). Forecasted hospitalizations using SARS-CoV-2 RNA data from 6 WWTPs across 43 ZIP codes in South Carolina.</p>
+    <ul>
+      <li>Models: Random Forest, Poisson Regression</li>
+      <li>Identified <strong>7–21 day predictive lag</strong></li>
+      <li>Accuracy: <strong>90.8%</strong> (WWTP), <strong>77.3%</strong> (ZIP)</li>
+      <li>Best performance at 14-day forecast horizon</li>
+    </ul>
+    <a href="#" class="btn">View on GitHub</a>
   </div>
-      <p>Violation risk prediction using large-scale inspection data.</p>
-      <ul>
-        <li>200k+ inspections</li>
-        <li>Accuracy <strong>82%</strong></li>
-        <li>Cluster-based insights</li>
-      </ul>
-      <a href="#" class="btn">GitHub</a>
+
+  <div class="project-card project-food">
+    <div class="project-header">
+      <i class="fa-solid fa-utensils"></i>
+      <h3>NYC Restaurant Risk Analytics</h3>
     </div>
-
-    <div class="project-card project-mobility">
-  <div class="project-header">
-    <i class="fa-solid fa-bicycle"></i>
-    <h3>Cyclist Behavior Modeling</h3>
+    <p>Analyzed 200k+ NYC inspection records to predict food safety violations and identify spatial risk patterns.</p>
+    <ul>
+      <li>Classification accuracy ~<strong>82%</strong></li>
+      <li>Cluster-based feature engineering</li>
+      <li>Neighborhood-level risk insights</li>
+    </ul>
+    <a href="#" class="btn">View on GitHub</a>
   </div>
-      <p>Demand modeling & behavioral segmentation on urban mobility data.</p>
-      <ul>
-        <li>300k+ trips</li>
-        <li>Accuracy ~<strong>85%</strong></li>
-        <li>Seasonality effects</li>
-      </ul>
-      <a href="#" class="btn">GitHub</a>
+
+  <div class="project-card project-mobility">
+    <div class="project-header">
+      <i class="fa-solid fa-bicycle"></i>
+      <h3>Urban Cyclist Demand Modeling</h3>
     </div>
-
+    <p>Modeled bike-share demand using 300k+ trip records with behavioral segmentation and time-series analysis.</p>
+    <ul>
+      <li>Forecast accuracy ~<strong>85%</strong></li>
+      <li>Seasonality and trend decomposition</li>
+      <li>User behavior segmentation</li>
+    </ul>
+    <a href="#" class="btn">View on GitHub</a>
   </div>
+
+</div>
 </section>
 
 <!-- ================= STACK ================= -->
