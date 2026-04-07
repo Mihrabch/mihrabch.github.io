@@ -199,33 +199,39 @@ window.addEventListener("load", updateActiveNav);
     <a href="#" class="btn">View on GitHub</a>
   </div>
 
-  <div class="project-card project-food">
-    <div class="project-header">
-      <i class="fa-solid fa-utensils"></i>
-      <h3>NYC Restaurant Risk Analytics</h3>
-    </div>
-    <p>Analyzed 200k+ NYC inspection records to predict food safety violations and identify spatial risk patterns.</p>
-    <ul>
-      <li>Classification accuracy ~<strong>82%</strong></li>
-      <li>Cluster-based feature engineering</li>
-      <li>Neighborhood-level risk insights</li>
-    </ul>
-    <a href="#" class="btn">View on GitHub</a>
+ <div class="project-card project-food">
+  <div class="project-header">
+    <i class="fa-solid fa-utensils"></i>
+    <h3>NYC Restaurant Delivery Analytics</h3>
   </div>
+  <p>Analyzed large-scale delivery data to identify operational gaps and actionable strategies for improving customer experience and efficiency.</p>
+  <ul>
+    <li><strong>Ratings:</strong> 38.8% unrated orders → introduce post-delivery nudges to improve feedback coverage</li>
+    <li><strong>Weekend demand:</strong> Demand doubles while delivery time worsens by ~6 minutes → optimize staffing</li>
+    <li><strong>SLA risk:</strong> Flag orders likely to exceed 60 minutes at placement using prep-time estimates</li>
+    <li><strong>Promotions:</strong> Expand to mid-tier cuisines (Mexican, Indian); highlight affordable options (Korean, Vietnamese)</li>
+    <li><strong>Efficiency:</strong> Streamline prep for time-intensive cuisines (e.g., Thai); promote quick-prep items during peak hours</li>
+    <li><strong>Pricing:</strong> Explore dynamic weekend pricing for high-demand cuisines to improve margins</li>
+  </ul>
+  <a href="#" class="btn">View on GitHub</a>
+</div>
 
-  <div class="project-card project-mobility">
-    <div class="project-header">
-      <i class="fa-solid fa-bicycle"></i>
-      <h3>Urban Cyclist Demand Modeling</h3>
-    </div>
-    <p>Modeled bike-share demand using 300k+ trip records with behavioral segmentation and time-series analysis.</p>
-    <ul>
-      <li>Forecast accuracy ~<strong>85%</strong></li>
-      <li>Seasonality and trend decomposition</li>
-      <li>User behavior segmentation</li>
-    </ul>
-    <a href="#" class="btn">View on GitHub</a>
+ <div class="project-card project-mobility">
+  <div class="project-header">
+    <i class="fa-solid fa-bicycle"></i>
+    <h3>Cyclistic Rider Behavior & Conversion Analytics</h3>
   </div>
+  <p>End-to-end analysis of 1M+ bike-share trips in Chicago to understand behavioral differences between casual riders and annual members and design conversion strategies.</p>
+  <ul>
+    <li><strong>Behavior:</strong> Members ride consistently (commuting); casual riders peak on weekends (recreation)</li>
+    <li><strong>Usage:</strong> Casual riders take longer trips and cover greater distances</li>
+    <li><strong>Seasonality:</strong> Peak usage in summer → highest conversion opportunity</li>
+    <li><strong>Location:</strong> Casual riders cluster downtown and near Millennium Park</li>
+    <li><strong>Fleet insight:</strong> Docked bikes show near-zero usage → operational inefficiency</li>
+    <li><strong>Strategy:</strong> Target casual riders with summer campaigns and location-based promotions</li>
+  </ul>
+  <a href="#" class="btn">View on GitHub</a>
+</div>
 
 </div>
 </section>
@@ -251,7 +257,7 @@ window.addEventListener("load", updateActiveNav);
     <div id="stack" class="stack-bg">
       <h2 class="section-title">Technical Stack</h2>
       <div class="stack-card stack-text">
-        <strong>Languages:</strong> Python, SQL, R<br>
+        <strong>Languages:</strong> Python, MATLAB, SQL, R<br>
         <strong>Modeling & ML:</strong> Machine Learning, Statistical Models, Forecasting, ROC/AUC<br>
         <strong>Data Engineering:</strong> ETL/ELT, Time-Series, Large-Scale Analytics, MongoDB<br>
         <strong>Visualization:</strong> Tableau, Power BI<br>
